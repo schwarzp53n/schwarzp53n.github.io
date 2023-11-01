@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Psatls on Schwarz Rosen</title>
+    <link>https://schwarzp53n.github.io/psatls/</link>
+    <description>Recent content in Psatls on Schwarz Rosen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Nov 2023 17:01:07 +0000</lastBuildDate><atom:link href="https://schwarzp53n.github.io/psatls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>imperva.com</title>
+      <link>https://schwarzp53n.github.io/psatls/imperva/</link>
+      <pubDate>Wed, 01 Nov 2023 17:01:07 +0000</pubDate>
+      
+      <guid>https://schwarzp53n.github.io/psatls/imperva/</guid>
+      <description>Public Service Announcements TLS: IMPERVA.COM imperva.com TLS certificate served as certificate for Israeli Intelligence Domains Download Original Certificate here openssl x509 -text -noout -in &amp;#34;imperva-com.cer&amp;#34; Certificate: Data: Version: 3 (0x2) Serial Number: 01:a7:47:92:e9:2c:6e:09:57:36:5b:75:8f:29:63:b5 Signature Algorithm: sha256WithRSAEncryption Issuer: C = BE, O = GlobalSign nv-sa, CN = GlobalSign Atlas R3 DV TLS CA 2023 Q3 Validity Not Before: Jul 19 02:10:22 2023 GMT Not After : Jan 15 02:10:22 2024 GMT Subject: CN = imperva.</description>
+    </item>
+    
+  </channel>
+</rss>
