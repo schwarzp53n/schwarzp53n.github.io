@@ -15,7 +15,7 @@ draft: true
 
 
 ```bash
-openssl x509 -text -noout -in "imperva-com.cer"
+openssl x509 -text -noout -in "imperva.com.cer"
 ```
 
 
