@@ -11,7 +11,7 @@ draft: true
 ### imperva.com TLS certificate served as certificate for Israeli Intelligence Domains
 
 
-#### Download Original Certificate [here](/monitoring/tls/imperva-com.cer)
+#### Download Original Certificate [here](/monitoring/tls/imperva.com.cer)
 
 
 ```bash
