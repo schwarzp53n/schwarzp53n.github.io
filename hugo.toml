@@ -1,0 +1,4 @@
+baseURL = 'https://schwarzp53n.github.io/'
+languageCode = 'en-us'
+title = 'Schwarz Rosen'
+theme = 'redrose'

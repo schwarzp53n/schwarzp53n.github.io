@@ -1,0 +1,43 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="cybersecurity public service announcements">
+  <meta name="theme-color" content="#333333" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="frame-src 'none';
+                form-action 'none';
+                img-src 'self' blob: data:;
+                object-src 'none';
+                script-src 'self';"
+  />
+
+    {{- if isset .Params "canonical" -}}
+    <link rel="canonical" href="{{ .Params.canonical }}" />
+    {{- else -}}
+    <link rel="canonical" href="{{ .Permalink }}" />
+    {{- end }}
+
+    <!-- Bootstrap CSS -->
+    <link defer href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link defer href="/css/rose.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    {{ $style := resources.Get "font.scss" | resources.ToCSS | resources.Fingerprint }}
+    <link defer rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ .Data.Integrity }}">
+
+    <!-- Tab info -->
+    <title>
+        {{ if .IsHome }}
+        {{ .Site.Title }}
+        {{ else if .Params.hideSiteTitle }}
+        {{ .Page.Title }}
+        {{ else if .Page.Title }}
+        {{ .Page.Title }} | {{ .Site.Title }}
+        {{ else }}
+        {{ .Site.Title }}
+        {{ end }}
+    </title>
+</head>
