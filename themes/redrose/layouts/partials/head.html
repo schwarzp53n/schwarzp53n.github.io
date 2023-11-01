@@ -12,19 +12,17 @@
                 script-src 'self';"
   />
 
-    {{- if isset .Params "canonical" -}}
-    <link rel="canonical" href="{{ .Params.canonical }}" />
-    {{- else -}}
-    <link rel="canonical" href="{{ .Permalink }}" />
-    {{- end }}
+  {{- if isset .Params "canonical" -}}
+  <link rel="canonical" href="{{ .Params.canonical }}" />
+  {{- else -}}
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{- end }}
 
-    <!-- Bootstrap CSS -->
-    <link defer href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link defer href="/css/rose.css" rel="stylesheet">
-
-    <!-- Fonts -->
+  <link defer href="/css/bootstrap.min.css" rel="stylesheet">
+  <link defer href="/css/rose.css" rel="stylesheet">
+  <!-- <link defer href="/css/tufte.min.css" rel="stylesheet">
+  -->
+  <!-- Fonts -->
     {{ $style := resources.Get "font.scss" | resources.ToCSS | resources.Fingerprint }}
     <link defer rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ .Data.Integrity }}">
 
